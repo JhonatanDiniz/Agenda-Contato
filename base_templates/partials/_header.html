@@ -11,8 +11,8 @@
       </div>
     </nav>
     <div class="search">
-      <form action="" method="GET">
-        <input class="search-input" type="search" placeholder="Pesquisar">
+      <form action={% url "contact:search" %} method="GET">
+        <input class="search-input" type="search" placeholder="Pesquisar" id="search" name="q">
       </form>
     </div>
 </header>
